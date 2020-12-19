@@ -1,0 +1,107 @@
+#phrase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.text-image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#who-container {
+  background-color: #0096C7;
+}
+
+.text-image-container > div {
+  padding: 20vh 6vw 10vh 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-image-container.dark {
+  color: white;
+}
+
+.text-image-container.light {
+  color: #0096C7;
+}
+
+.text-image-container > div > h1 {
+  font-size: 4.5vh;
+  margin: 0 0 3vh 0;
+}
+
+.text-image-container > div > p {
+  font-family: Selawik;
+  font-size: 3vh;
+  margin: 0;
+  font-weight: 100;
+}
+
+.text-image-container > div > img {
+  width: 100%;
+  border-radius: 2vh;
+}
+
+.img-container {
+  min-width: 40%;
+}
+
+#phrase-logo {
+  height: 30vh;
+  padding: 2vh 1vw;
+  border-radius: 2vh;
+  background-color: #0096C7;
+}
+
+#phrase-text {
+  margin: 2vh 0 0 0;
+  color: white;
+  font-size: 5.5vh;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 0 10px #333
+}
+
+@media (orientation: portrait) {
+  #who-container {
+    flex-direction: column;
+  }
+
+  #what-container {
+    flex-direction: column-reverse;
+  }
+
+  .text-image-container > div {
+    padding: 1vh 6vw 6vh 6vw;
+  }
+
+  #who-container > div:first-child {
+    padding-top: 14vh;
+  }
+
+  #what-container > div:last-child {
+    padding-top: 14vh;
+  }
+
+  #phrase-logo {
+    height: auto;
+    width: 80%;
+  }
+
+  .text-image-container > div > p {
+    font-size: 2.7vh;
+  }
+
+  #phrase-text {
+    font-size: 4vh;
+    margin-top: 3vh;
+  }
+}
